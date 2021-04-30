@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -9,32 +10,38 @@ a {
     text-decoration: none;
     color: #292c52;
 }
+h1 {
+    font-size: clamp(32px, 7vw, 65px);
+    line-height: 80px;
+}
+h1, h2, h3, h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 16px;
+}
+.container {
+    padding: 0 42px;
+}
 .header-cont {
     width: auto;
-    height: 101.5vh;
     background: #15162f;
     background-image: url(https://michelada.io/images/v3/il-espuma-rojo.svg);
     background-repeat: no-repeat;
     background-position:right bottom;
 }
 .header-wrapper {
-    margin: 0 27px;
-    padding: 50px 15px 100px 15px;
-}
-h1 {
-    font-size: clamp(32px, 7vw, 65px);
-    line-height: 80px;
+    height: 795px;
+    padding: 50px 0px 100px;
 }
 
-p {
-    font-size: 16px;
-}
 .header-row {
     display: flex;
 }
 .contact-btn { 
-    width: 140px;
-    height: 24px;
+    width: 190px;
+    height: 50px;
     background-color: #f9d026;
     border-radius: 100px;
     text-align: center;
@@ -57,13 +64,134 @@ p {
     color: #ffffff;
     letter-spacing: 3.5px;
 }
-
-
-@media screen and (min-width: 320px) {
-    h1 {
-        font-weight: 900;
-    }
-    
-    
-
+.div-serv-present-cont {
+    display: flex;
+    background-color: #ffffff;
+    padding: 80px 0;
+    justify-content: center;
+}
+.div-serv-present {
+    width: 43%;
+    text-align: center;
+    line-height: 25px;
+}
+.div-serv-present h1 {
+    letter-spacing: 3px;
+}
+.div-serv-present p {
+    letter-spacing: 0.9px;
+}
+.serv-web-cont {
+    background-color: #dcdcdc;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.img-serv-web {
+    display: flex;
+    width: 41.5%;
+    justify-content: center;
+}
+.serv-web-txt {
+    width: 58.5%;
+}
+.serv-web-txt h1 {
+    color: #ea3434;
+    font-size: 52px;
+}
+.serv-web-txt h3 {
+    color: #292c52;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+}
+.serv-web-txt p {
+    color: #15162f;
+    font-size: 18px;
+    padding: 30px 0;
+    line-height: 25px;
+    font-weight: 100;
+}
+#spicy-details {
+    width: 280px;
+    padding: 15px 10px 12px;
+}
+.serv-team-cont {
+    background-color: #dcdcdc;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+}
+#mix-up {
+    width: 220px;
+}
+.serv-products-cont {
+    background-color: #dcdcdc;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    display: flex;
+}
+#product-further {
+    width: 320px;
+    padding:15px 10px 12px;
+}
+.micheladas-cont {
+    background-color: #f9d026;
+    background-image: url(https://michelada.io/images/v3/il-espuma-rojo-inverted.svg);
+    background-repeat: no-repeat;
+    background-position: 90% top;
+    background-size: 329px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.micheladas-wrapper {
+    width: 55%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.micheladas-wrapper h1 {
+    color: #ffffff;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.micheladas-cont p {
+    padding-top: 50px;
+    color: #15162f;
+    font-size: 24px;
+    font-weight: 600;
+}
+.micheladas-wrapper span {
+    color: #ffffff;
+}
+.mail-cont1 {
+    background-color: #15162f;
+    background-image: url(https://michelada.io/images/v3/il-espuma-azul.svg);
+    background-repeat: no-repeat;
+    background-size: 334px;
+    background-position: left top;
+    border-bottom: #ffffff solid .5px;
+}
+.mail-wrapper1 {
+    padding-top: 220px;
+    padding-bottom: 5px;
+    color: #f9d026;
+    text-align: center;
+}
+.mail-cont2 {
+    background-color: #15162f;
+    background-image: url(https://michelada.io/images/v3/il-espuma-azul-flip.png);
+    background-repeat: no-repeat;
+    background-size: 334px;
+    background-position: right bottom;
+}
+.mail-wrapper2 {
+    padding-top: 20px;
+    padding-bottom: 220px;
+    display: flex;
+    justify-content: center;
+}
+.mail-wrapper2 a {
+    color: #ffffff;
+    font-size: 65px;
 }
