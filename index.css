@@ -17,7 +17,7 @@ h1 {
     margin-bottom: 10px;
 }
 h2, h3, h4 {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
     line-height: 30px;
 }
@@ -153,15 +153,11 @@ p {
     background-color: #f9d026;
     background-image: url(https://michelada.io/images/v3/il-espuma-rojo-inverted.svg);
     background-repeat: no-repeat;
-    background-position: 90% top;
-    background-size: 329px;
     padding-top: 110px;
     padding-bottom: 124px;
 }
 .micheladas-wrapper {
     width: 55%;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 .micheladas-wrapper h1 {
     color: #ffffff;
@@ -184,11 +180,8 @@ p {
     background-repeat: no-repeat;
     background-size: 334px;
     background-position: left top;
-    border-bottom: #ffffff solid .5px;
 }
 .mail-wrapper1 {
-    padding-top: 220px;
-    padding-bottom: 5px;
     color: #f9d026;
     text-align: center;
 }
@@ -198,11 +191,8 @@ p {
     background-repeat: no-repeat;
     background-size: 334px;
     background-position: right bottom;
-    border-bottom: #ffffff solid .5px;
 }
 .mail-wrapper2 {
-    padding-top: 20px;
-    padding-bottom: 220px;
     display: flex;
     justify-content: center;
 }
@@ -259,6 +249,24 @@ hr {
     .serv-web-txt {
         padding-left: 15px;
     }
+    .micheladas-cont {
+        background-position: top right;
+        background-size: 329px;
+    }
+    .mail-cont1 {
+        border-bottom: #ffffff solid 0px;
+    }
+    .mail-wrapper1 {
+        padding: 240px 25% 5px;
+    }
+    .mail-cont2 {
+        border-bottom: #ffffff solid 0px;
+    }
+    .mail-wrapper2 {
+        padding-top: 20px;
+        padding-bottom: 300px;
+        font-weight: bold;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -280,5 +288,22 @@ hr {
     }
     .img-serv-web {
         justify-content: center;
+    }
+    .micheladas-cont {
+        background-position: 90% top;
+        background-size: 329px;
+    }
+    .mail-cont1 {
+        border-bottom: #ffffff solid .5px;
+    }
+    .mail-wrapper1 {
+        padding: 220px 0 5px;
+    }
+    .mail-cont2 {
+        border-bottom: #ffffff solid .5px;
+    }
+    .mail-wrapper2 {
+        padding-top: 20px;
+        padding-bottom: 220px;
     }
 }
