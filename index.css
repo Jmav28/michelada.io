@@ -100,6 +100,14 @@ p {
 .img-serv-web {
     display: flex;
 }
+.img-serv-web-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.img-serv-web-mobile img {
+    width: 200px;
+}
 .serv-web-txt {
     padding-right: 15px;
 }
@@ -267,6 +275,7 @@ hr {
     }
     .img-serv-web img {
         width: 200px;
+        height: 230px;
     }
     .serv-web-txt {
         width: 100%;
@@ -286,6 +295,9 @@ hr {
     }
     #team-cont {
         text-align: center;
+    }
+    #team-serv-img {
+        display: none;
     }
     .micheladas-bg {
         background-position: top right;
@@ -332,6 +344,9 @@ hr {
     .contact-btn-mobile {
         display: none;
     }
+    .img-serv-web-mobile {
+        display: none;
+    }
     .header-bg {
         background-size: 411px;
     }
@@ -355,7 +370,7 @@ hr {
         width: 75%;
     }
     .our-serv-wrppr {
-        width: 50%;
+        width: 60%;
     }
     .our-serv-wrppr h1 {
         line-height: 80px;
@@ -371,6 +386,7 @@ hr {
     .serv-web-txt {
         width: 58.333333%;    
         padding-left: 15px;
+        text-align: unset;
     }
     .img-serv-web img {
         width: 290px;
@@ -384,6 +400,9 @@ hr {
     }
     #team-cont {
         text-align:right;
+    }
+    #team-serv-img {
+        display: block;
     }
     #serv-products-wrppr {
         flex-flow: row;
