@@ -289,6 +289,15 @@ hr {
     .mail-bg1 {
         background-size: 248px;
     }
+    .mail-wrppr1 {
+        padding: 200px 15px 30px;
+    }
+    .mail-bg2 {
+        background-size: 248px;
+    }
+    .mail-wrppr2 {
+        padding-bottom: 220px;
+    }
     .mail-wrppr2 a {
         font-size: 26px;
     }
@@ -375,6 +384,7 @@ hr {
         padding: 240px 25% 5px;
     }
     .mail-bg2 {
+        background-size: 334px;
         border-bottom: #ffffff solid 0px;
     }
     .mail-wrppr2 {
@@ -436,6 +446,7 @@ hr {
 }
 @media screen and (min-width: 1025px) {
     .container {
+        margin: 0 auto;
         padding-left: 15px;
         padding-right: 15px;
     }
