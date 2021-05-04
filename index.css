@@ -11,7 +11,7 @@ a {
     color: #292c52;
 }
 h1 {
-    font-size: clamp(32px, 7vw, 65px);
+    font-size: clamp(32px, 7vw, 65px);        
     line-height: 80px;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -24,20 +24,20 @@ h2, h3, h4 {
 p {
     font-size: 16px;
 }
-.header-cont {
+.header-bg {
     width: auto;
     background: #15162f;
     background-image: url(https://michelada.io/images/v3/il-espuma-rojo.svg);
     background-repeat: no-repeat;
     background-position:right bottom;
 }
-.header-wrapper {
-    height: 795px;
+.header-wrppr {
     padding: 50px 0px 100px;
 }
 
 .header-row {
     display: flex;
+    flex-flow: row wrap;
 }
 .contact-btn { 
     width: 190px;
@@ -52,55 +52,47 @@ p {
 .contact-btn a {
     letter-spacing: 1.5px;
 }
-.logo {
-    width: 75%;
-}
-.main-txt-wrapper {
+.main-txt-wrppr {
     padding-top: 45px;
 }
 .main-txt {
     color: #ffffff;
     letter-spacing: 3.5px;
 }
-.div-serv-present-cont {
+.our-serv-bg {
     display: flex;
     background-color: #ffffff;
     padding-top: 80px;
     padding-bottom: 80px;
     justify-content: center;
 }
-.div-serv-present {
+.our-serv-wrppr {
     text-align: center;
     line-height: 25px;
 }
-.div-serv-present h1 {
+.our-serv-wrppr h1 {
     letter-spacing: 3px;
+    margin-top: 20px;
 }
-.div-serv-present p {
+.our-serv-wrppr p {
     letter-spacing: 0.9px;
 }
-.serv-web-cont {
+.serv-web-bg {
     background-color: #dcdcdc;
     padding-top: 70px;
     padding-bottom: 40px;
-    display: flex;
     justify-content: space-around;
+}
+#serv-web-wrppr {
+    display: flex;
 }
 .img-serv-web {
     display: flex;
-    width: 41.666667%;
-    padding-right: 15px;
-}
-.img-serv-web img {
-    width: 290px;
-    height: 344px;
 }
 .serv-web-txt {
-    width: 58.333333%;
     padding-right: 15px;
 }
 #team-cont {
-    text-align: right;
     align-content: flex-end;
 }
 #team-serv-img {
@@ -115,7 +107,6 @@ p {
 }
 .serv-web-txt h3 {
     color: #292c52;
-    font-size: 24px;
     letter-spacing: 1.2px;
 }
 .serv-web-txt p {
@@ -128,79 +119,75 @@ p {
 #spicy-details {
     width: 280px;
 }
-.serv-team-cont {
+.serv-team-bg {
     background-color: #dcdcdc;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+#serv-team-wrppr {
     display: flex;
 }
-#mix-up-wrpr {
+#mix-up-wrppr {
     margin-left: 45%;
 }
 #mix-up {
     width: 220px;
 }
-.serv-products-cont {
+.serv-products-bg {
     background-color: #dcdcdc;
     padding-top: 40px;
     padding-bottom: 70px;
+}
+#serv-products-wrppr {
     display: flex;
 }
 #product-further {
     width: 320px;
 }
-.micheladas-cont {
+.micheladas-bg {
     background-color: #f9d026;
     background-image: url(https://michelada.io/images/v3/il-espuma-rojo-inverted.svg);
     background-repeat: no-repeat;
-    padding-top: 110px;
-    padding-bottom: 124px;
 }
-.micheladas-wrapper {
-    width: 55%;
-}
-.micheladas-wrapper h1 {
+.micheladas-wrppr h1 {
     color: #ffffff;
     letter-spacing: 3px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.micheladas-cont p {
-    padding-top: 50px;
+.micheladas-bg p {
     color: #15162f;
-    font-size: 24px;
     font-weight: 600;
 }
-.micheladas-wrapper span {
+.micheladas-wrppr span {
     color: #ffffff;
 }
-.mail-cont1 {
+.mail-bg1 {
     background-color: #15162f;
     background-image: url(https://michelada.io/images/v3/il-espuma-azul.svg);
     background-repeat: no-repeat;
     background-size: 334px;
     background-position: left top;
 }
-.mail-wrapper1 {
+.mail-wrppr1 {
     color: #f9d026;
     text-align: center;
 }
-.mail-cont2 {
+.mail-bg2 {
     background-color: #15162f;
     background-image: url(https://michelada.io/images/v3/il-espuma-azul-flip.png);
     background-repeat: no-repeat;
     background-size: 334px;
     background-position: right bottom;
 }
-.mail-wrapper2 {
+.mail-wrppr2 {
     display: flex;
     justify-content: center;
 }
-.mail-wrapper2 a {
+.mail-wrppr2 a {
     color: #ffffff;
-    font-size: 65px;
 }
-.footer-cont {
+.footer-bg {
     background-color: #292c52;
     color: #ffffff;
     font-size: 13px;
@@ -223,49 +210,180 @@ hr {
 .copyright p {
     font-size: 13px;
     text-align: center;
+    margin-bottom: 9px;
+}
+
+@media screen and (min-width: 320px) {
+    .container {
+        max-width: 300px; 
+        margin: 0 auto;       
+    }
+    .header-bg {
+        background-size: 243px;
+    }
+    .header-wrppr {
+        height: 599px;
+    }
+    .header-row {
+        justify-content: center;
+    }
+    .main-txt {
+        line-height: normal;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .our-serv-wrppr {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .our-serv-wrppr h1 {
+        line-height: normal;
+    }
+    #serv-web-wrppr {
+        flex-flow: column;
+    }
+    .img-serv-web {
+        width: 100%;
+        justify-content: center;
+    }
+    .img-serv-web img {
+        width: 200px;
+    }
+    .serv-web-txt {
+        width: 100%;
+        text-align: center;
+    }
+    .serv-web-txt h1 {
+        line-height: normal;
+    }
+    .serv-web-txt h3 {
+        font-size: 20px;
+    }
+    #serv-products-wrppr {
+        flex-flow: column;
+    }
+    #serv-team-wrppr {
+        flex-flow: column;
+    }
+    #team-cont {
+        text-align: center;
+    }
+    .micheladas-bg {
+        background-position: top right;
+        background-size: 226px;
+        padding-top: 241px;
+        padding-bottom: 95px;
+    }
+    .micheladas-wrppr {
+        width: 270px;
+    }
+    .micheladas-wrppr h1 {
+        line-height: normal;
+    }
+    .micheladas-wrppr p {
+        font-size: 20px;
+        padding-top: 40px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .mail-bg1 {
+        background-size: 248px;
+    }
+    .mail-wrppr2 a {
+        font-size: 26px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container {
+        max-width: 1170px;
+        margin: 0;
         padding-left: 24px;
         padding-right: 24px;
     }
-    .header-cont {
+    .header-bg {
         background-size: 411px;
+    }
+    .header-row {
+        justify-content: unset;
+    }
+    .main-txt {
+        line-height: 80px;
+    }
+    .logo {
+        width: 70%;
     }
     #header-btn {
         margin-right: 25px;
         margin-left: 0;
     }
-    .main-txt-wrapper {
+    .main-txt-wrppr {
         width: 75%;
     }
-    .div-serv-present {
+    .our-serv-wrppr {
         width: 50%;
     }
+    .our-serv-wrppr h1 {
+        line-height: 80px;
+    }
+    #serv-web-wrppr {
+        flex-flow: row;
+    }
     .img-serv-web {
-        justify-content: flex-start;
+        width: 41.666667%;
+        justify-content: flex-start;        
+        padding-right: 15px;
     }
     .serv-web-txt {
+        width: 58.333333%;    
         padding-left: 15px;
     }
-    .micheladas-cont {
+    .img-serv-web img {
+        width: 290px;
+        height: 344px;
+    }
+    .serv-web-txt h3 {
+        font-size: 24px;
+    }
+    #serv-team-wrppr {
+        flex-flow: row;
+    }
+    #team-cont {
+        text-align:right;
+    }
+    #serv-products-wrppr {
+        flex-flow: row;
+    }
+    .micheladas-bg {
         background-position: top right;
         background-size: 329px;
+        padding-top: 110px;
+        padding-bottom: 124px;
     }
-    .mail-cont1 {
+    .micheladas-wrppr {
+        width: 55%;
+    }
+    .micheladas-wrppr p {
+        font-size: 24px;
+        padding-top: 50px;
+    }
+    .mail-bg1 {
+        background-size: 334px;
         border-bottom: #ffffff solid 0px;
     }
-    .mail-wrapper1 {
+    .mail-wrppr1 {
         padding: 240px 25% 5px;
     }
-    .mail-cont2 {
+    .mail-bg2 {
         border-bottom: #ffffff solid 0px;
     }
-    .mail-wrapper2 {
+    .mail-wrppr2 {
         padding-top: 20px;
         padding-bottom: 300px;
         font-weight: bold;
+    }
+    .mail-wrppr2 a {
+        font-size: 65px;
     }
 }
 
@@ -274,36 +392,51 @@ hr {
         padding-left: 42px;
         padding-right: 42px;
     }
-    .header-cont {
+    .header-bg {
         background-size: 511px;
+    }
+    .main-txt {
+        padding-left: 0;
+    }
+    .header-wrppr {
+        height: 795px;
+    }
+    .logo {
+        width: 75%;
     }
     #header-btn {
         margin-left: 20px;
     }
-    .main-txt-wrapper {
-        width: 55%;
+    .main-txt-wrppr {
+        width: 60.66%;
     }
-    .div-serv-present {
+    .our-serv-wrppr {
         width: 50%;
     }
     .img-serv-web {
         justify-content: center;
     }
-    .micheladas-cont {
+    .micheladas-bg {
         background-position: 90% top;
         background-size: 329px;
     }
-    .mail-cont1 {
+    .mail-bg1 {
         border-bottom: #ffffff solid .5px;
     }
-    .mail-wrapper1 {
+    .mail-wrppr1 {
         padding: 220px 0 5px;
     }
-    .mail-cont2 {
+    .mail-bg2 {
         border-bottom: #ffffff solid .5px;
     }
-    .mail-wrapper2 {
+    .mail-wrppr2 {
         padding-top: 20px;
         padding-bottom: 220px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
